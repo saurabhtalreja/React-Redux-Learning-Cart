@@ -1,8 +1,15 @@
-# Getting Started with Create React App
+# Understanding Redux
+## Thanks to [Ronit Mukherjee](https://www.youtube.com/redirect?event=video_description&redir_token=QUFFLUhqbm1UTkloeWY0WWlVQ2VtQmtOdVdBcVhneWVtUXxBQ3Jtc0ttQWxrVm9zck9oS1VaNGJJUTNDdWJDcHlqYWI5dDAycWZiUG1PemVTZFg2Zi1xanBzdTBRTUJIdmxJT0xLYkI0dlhGdkYwY1hDZHByMl9KZ05BZ3RHMG1HSzdQZWFuV3d6S1hOUHF5UEJRZ0JRZGZUMA&q=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fmukherjeeronit%2F) for creating this amazing free [Redux Playlist](https://www.youtube.com/watch?v=GGxK3oKimLA&list=PLZjjdd9-SJS0UiiJ0-dYk_PpI5GjYQ-Eb&t=0s)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Basic Redux Terminology
+* Actions - Calls all reducers, object with properties type & payload
+* Reducers - Pure function, takes state and action as param
+* Store - State Manager, wrap react code with <Provider store={yourStore}> </Provider>
+* Dispatch - Dispatches the action
+* Connect/useSelector - Both of them expose your state to the component, connect uses mapsToProps and useSelector gives state at any given point.
 
-## Available Scripts
+### Products list is rendered using Functional Components and used useSelector hook to get state.
+### Whereas Cart functionality is implemented using class based components and used methods such as mapStateToProps & mapDispatch to props to get access of state and Dispatch
 
 In the project directory, you can run:
 
